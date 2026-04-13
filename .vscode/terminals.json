@@ -1,0 +1,15 @@
+ {
+  "autorun": true,
+  "terminals": [
+    {
+      "name": "Servidor Back-end",
+      "focus": false,
+      "command": "cd back-end ; npm run watch"
+    },
+    {
+      "name": "Monitor Frontend",
+      "focus": false,
+      "command": "cd front_end ; npm run watch"
+    }
+  ]
+}

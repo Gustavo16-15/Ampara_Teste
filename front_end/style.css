@@ -1,0 +1,436 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal */
+    
+}
+
+ body{
+ background-color: aliceblue;
+ width: 100%;
+ }
+ 
+ body::before {
+    content: ""; /* Obrigatório para o elemento existir */
+    position: fixed; /* Fixa o fundo para não sumir no scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/imagen\ de\ fundo.jpeg");
+    background-size: cover; /* Cobre toda a área do fundo */
+    background-position: center; /* Centraliza a imagem */
+    filter: blur(15px); /* Aplica o efeito de desfoque */
+    opacity: 0.7; /* Ajusta a opacidade para suavizar o efeito */
+    z-index: -1; /* Coloca a cor atrás de todo o conteúdo */
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imglogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: auto;
+    overflow: visible; /* Garante que a imagem não seja cortada se for maior */
+    /* width: 100%; */
+    /* height: auto; */
+    /* object-fit: cover; */
+    padding: 0%;
+    margin: 0 auto;
+    
+}
+.imglogo img{
+   height: 200px; /* A imagem ocupa a altura da caixa */
+   width: 300px;  /* A largura se ajusta proporcionalmente */
+    object-fit: cover; /* Garante que a imagem inteira apareça sem cortes */
+    border-radius: 50px;
+    
+    /* object-fit: cover; */
+    align-self: center;
+}
+ .logo{
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center; */
+ align-items: center;
+ /* gap: 10px; */
+ width: fit-content;
+ /* background-color: rgb(254, 254, 254); */
+ margin: 0 auto;
+ border-radius: 15px;
+ }
+  
+ .Ampara{
+    font-size: 100px;
+    font-style: italic;
+    color: hsl(132, 86%, 17%);
+
+ }
+    .mensagen{
+    font-size: 30px;
+    font-style: italic;
+    color: hsl(132, 86%, 17%);
+    font-weight: bold;
+    }
+
+    .principal{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap : 50px;
+    margin: 50px auto;  
+    width: 95%;
+    box-sizing: border-box;
+    }
+    
+  .titulo{
+    font-size: 100px;
+    font-style: italic;
+    color: hsl(132, 86%, 17%);
+    font-weight: bold;
+}
+.subtitulo{
+    color: hsl(140, 4%, 15%);
+    font-size:  30px;  
+    max-width: 100%;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.ativos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    /* Garante que o padding não "estique" a largura total além dos 90% */
+    box-sizing: border-box; 
+    
+    /* Largura fluida com limite máximo para não ficar gigante em monitores 4k */
+    width: 100%;
+    /* max-width: 700px;  */
+    
+    /* Margem centralizada e responsiva */
+    /* margin: 2rem auto; */
+    
+    /* Padding relativo: ajusta conforme o tamanho da tela */
+    /* padding: 5%;  */
+    
+    /* 5. ESSENCIAL: Impede que o padding "estoure" o tamanho da caixa */
+    box-sizing: border-box; 
+
+    /* Opcional: Garante que o texto não saia da borda em zooms extremos */
+    overflow-wrap: break-word;
+}
+
+.ativos h2{
+  font-size :30px;
+  color: hsl(132, 86%, 17%);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.ativos p{
+  font-size: 30px;
+  color: hsl(140, 4%, 15%);
+  line-height: 1.6;
+}
+
+.btn{
+    
+    background-color: hsl(46, 61%, 38%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 50px 0 0;
+    width: 100%;
+}
+ /* Se você usou a classe .btn no HTML, use ela aqui também */
+.btn:hover, 
+.comprar button:hover,
+.Tonico button:hover {
+    background-color: hsl(132, 92%, 23%);
+    transition: background-color 0.3s ease;
+}
+
+.imagem{
+    display: flex;
+    padding: 0%;
+    height: auto;
+}
+.imagem img {
+    width: 700px;
+    height: 1000px;
+    object-fit: cover;  /*Garante que a foto preencha o espaço sem achatar ou distorcer a imagem.  */
+    /* object-fit: contain;  Garante que a foto preencha o espaço sem cortar ou distorcer a imagem.  */
+}
+
+strong{
+    color: hsl(132, 86%, 17%);
+    font-weight: bold;
+}
+ 
+.beneficios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap: 30px;  */
+    background-color: rgb(254, 254, 254);
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+}
+ 
+.icone_queda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     
+}
+.icone_crescimento{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.icone_raiz{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     
+}
+.icone_folha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+.queda_capilar{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 30px;
+    
+}
+.crescimento_capilar{
+    width: 310px;
+    height: auto;
+    margin-top: 25px;
+    object-fit: cover;
+}
+.raiz_capilar{
+    height: 200px;
+    margin-top: 45px;
+    object-fit: cover;
+}
+.folha_capilar{
+    margin-top: 45px;
+    height: 200px;
+}
+
+ .beneficios p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 0 0 0;
+}
+.texto span{
+    
+    font-style: italic;
+    color: hsl(132, 86%, 17%);
+    font-size: 40px;
+     /* font-style: italic;  */
+     
+    color: hsl(132, 86%, 17%);
+}
+
+.texto p{
+    font-size: 25px;
+    font-style: italic;
+    color: hsl(140, 4%, 15%);
+}
+.imagem_produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 100%; */
+    margin: 50px auto;
+    width:90%;
+    /* transform: scaleX(80%); */
+    border-radius: 50px;
+    /* object-fit: cover; */
+    padding: 40px;
+    background-color: rgb(254, 254, 254);
+}
+
+.produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%; 
+    border-radius: 15px;
+    gap :100px;
+    padding: 40px;
+    /* transform: translateX(300px); */
+    gap :70px;
+    /* transform: translateX(300px); */
+}
+.conteudo_venda{
+    display: flex;
+    flex-direction: column; /* Faz o texto ficar EM CIMA do preço/botão */
+    width: 35%;
+    gap: 30px; /* Dá um espaço entre o texto e o bloco de compra */
+}
+.texto_preco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap : 15px;
+    width: 100%;
+    /* transform: translateX(200px) translateY(-150px);  */
+}
+.foto{
+    width: 500px;
+    height: auto;
+    border-radius: 50px;
+    object-fit: cover;
+
+}
+.produto h2{
+    font-size: 70px;
+    font-style: italic;
+    color: hsl(132, 86%, 17%);
+    /* margin: 0 0 0 20px; */
+    /* align-self: start; */
+    /* transform: translateX(150px) translateY(50px); */
+}
+ 
+.descricao{
+    font-style: italic;
+    font-size: 25px;
+    color: hsl(140, 4%, 15%);  
+}
+.valor{
+    display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    font-style: italic;
+    font-size: 50px;
+    color: hsl(140, 4%, 15%);  
+}
+
+.comprar{
+    width: 100%; /* Largura que você já definiu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.comprar button{
+    background-color:  hsl(46, 61%, 38%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+}
+ 
+.garantido{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 0 0;
+}
+.seguro{
+    width: 150px;
+    height: 150px;
+    /* object-fit: cover; */
+}
+.carrinho_entrega{
+     transform: translateY(40px);
+    /* object-fit: cover; */
+}
+.entrega{
+    width: 200px;
+    height: 100px;
+    object-fit: cover; 
+    
+}
+.carteira{
+    width: 150px;
+    height: 150px;
+    /* object-fit: cover; */
+}
+.garantido p{
+    font-size: 20px;
+    font-style: italic;
+    color: hsl(140, 4%, 15%);
+}
+.TextoCarrinho{
+    transform: translateY(10px);
+}
+.TextoCarteira{
+    transform: translateY(10px);
+}
+
+.Tonico{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    transform: translateY(20px);
+    background-color: rgb(254, 254, 254);
+    padding: 40px;
+    border-radius: 30px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.Tonico button{
+    background-color: hsl(46, 61%, 38%);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 70%;
+    margin: 50px auto;
+}
+
+ 
+
+/* .titulo_produto{
+    display: flex;
+    font-size: large;
+    justify-content: center;
+     
+    gap: 10px;
+    margin: 0 0 0 50px;
+} */

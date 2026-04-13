@@ -1,0 +1,817 @@
+  /* No topo do arquivo responsive.css */
+ @media screen and (max-width: 1500px) {
+     .principal {
+         flex-direction: row;
+         justify-content: center;
+         gap: 5px;
+         margin: 50px 50px;
+         width: 100%;
+         box-sizing: border-box;
+     }
+
+
+     .imagem img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         /* margin-right: 50%; */
+     }
+
+ }
+
+ @media screen and (max-width: 1400px) {
+
+     /* Estilos para telas menores que 768px (tablets e celulares) */
+     .inicio,
+     .imglogo,
+     .logo {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         margin-left: 0;
+         margin-right: 0;
+         left: 0;
+     }
+
+     .imglogo img {
+         width: 300px;
+         height: auto;
+         margin: 0 auto;
+     }
+
+     .mensagen {
+         font-size: 25px;
+         text-align: center;
+         width: 100%;
+     }
+
+     .principal {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         /* Cria o espaço entre texto e imagem */
+         align-items: center;
+         gap: 20px;
+         margin: 50px 5%;
+         /* Adiciona um respiro nas laterais da página */
+         width: 90%;
+         box-sizing: border-box;
+     }
+
+     .apresentacao {
+         display: flex;
+         flex-direction: column;
+         justify-content: start;
+         align-items: flex-start;
+         /* Alinha o conteúdo interno (títulos) à esquerda */
+         width: 60%;
+         margin: 0 auto;
+         /* Remove o margin auto que centraliza o bloco */
+     }
+
+     .titulo {
+
+         font-size: 50px;
+         font-style: italic;
+         text-align: left;
+         /* Título encostado na esquerda */
+         margin: 0 0 15px 0;
+         width: 100%;
+
+     }
+
+     .subtitulo {
+         text-align: left;
+         /* Subtítulo encostado na esquerda */
+         max-width: 90%;
+         margin: 0 0 20px 0;
+         color: hsl(140, 4%, 15%);
+         font-size: 25px;
+         font-style: italic;
+     }
+
+     .ativos {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         /* Alinha a lista de ativos à esquerda */
+         width: 100%;
+     }
+
+     .ativos h2 {
+         text-align: left;
+         /* Título "Ativos poderosos" à esquerda */
+         margin: 0 0 15px 0;
+     }
+
+     .ativos p {
+         font-size: 18px;
+         max-width: 100%;
+         font-style: italic;
+         text-align: left;
+         margin: 0 0 10px 0;
+
+     }
+
+     .imagem img {
+         width: 100%;
+         max-width: 300px;
+         /* Evita que a garrafa fique grande demais */
+         height: auto;
+     }
+
+     .btn-container {
+         width: 100%;
+         display: flex;
+         justify-content: flex-start;
+         /* Alinha o botão à esquerda junto com o texto */
+         margin-top: 25px;
+     }
+
+     .beneficios {
+         gap: 20px;
+     }
+
+     .icone_crescimento {
+         gap: 20px;
+     }
+
+     .icone_raiz {
+         margin-left: 10px;
+     }
+
+     .icone_raiz p {
+         margin-top: 5px;
+         margin-left: 10px;
+         margin-bottom: 10px;
+     }
+
+     .icone_folha {
+         gap: 10px
+     }
+
+     .icone_folha p {
+         margin-top: 5px;
+     }
+
+     .queda_capilar {
+         width: 100px;
+         height: 164px;
+         object-fit: cover;
+     }
+
+     .crescimento_capilar {
+         width: 100px;
+         height: 100px;
+         object-fit: cover;
+
+     }
+
+     .raiz_capilar {
+         width: 100px;
+         height: auto;
+         object-fit: cover;
+         margin-bottom: 20px;
+     }
+
+     .folha_capilar {
+         width: 100px;
+         height: auto;
+         object-fit: cover;
+         margin-top: 30px;
+     }
+
+
+     .valor {
+         font-style: italic;
+         font-size: 40px;
+         color: hsl(140, 4%, 15%);
+     }
+
+     .comprar {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+
+     }
+ }
+
+ @media screen and (max-width :1200px) {
+     body {
+         width: 100%;
+     }
+
+     .inicio,
+     .imglogo,
+     .logo {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         margin-left: 0;
+         margin-right: 0;
+         left: 0;
+     }
+
+     .principal {
+         display: flex;
+         flex-direction: row;
+         /* Empilha o texto e a imagem */
+         align-items: center;
+         /* Centraliza os blocos no eixo horizontal */
+         text-align: start;
+         /* Garante que o texto interno se comporte */
+         width: 100%;
+         gap: 0px;
+         margin: 20px 0;
+         /* Dá um respiro entre o texto e a garrafa */
+     }
+
+     .apresentacao {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: start;
+         /* Centraliza o conteúdo interno */
+         width: 70%;
+         margin: 0 auto;
+         /* Removido o margin-left: 20% */
+         object-fit: cover;
+     }
+
+     .imagem {
+         width: 100%;
+         max-width: 300px;
+         /* Evita que a garrafa fique grande demais */
+         height: auto;
+     }
+
+     .beneficios {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         background-color: rgb(254, 254, 254);
+         object-fit: cover;
+         width: 100%;
+         height: auto;
+         margin-top: 20px;
+         border-radius: 20px;
+     }
+
+     .icone_queda {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .icone_crescimento {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+     }
+
+     .icone_raiz {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .icone_folha {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .queda_capilar {
+         width: 200px;
+         height: auto;
+         object-fit: cover;
+         margin-top: 30px;
+
+     }
+
+     .crescimento_capilar {
+         width: 150px;
+         height: auto;
+         margin-top: 45px;
+         object-fit: cover;
+     }
+
+     .raiz_capilar {
+         width: 100px;
+         height: auto;
+         margin-top: 45px;
+         object-fit: cover;
+     }
+
+     .folha_capilar {
+         width: 100px;
+         height: auto;
+         margin-top: 45px;
+         object-fit: cover;
+     }
+
+     .beneficios p {
+         font-size: 20px;
+         font-style: italic;
+         font-weight: bold;
+         text-align: center;
+     }
+
+        .valor{
+         font-style: italic;
+         font-size: 30px;
+         color: hsl(140, 4%, 15%);
+     }
+        }
+ 
+
+
+ @media screen and (max-width: 1100px) {
+
+     .inicio,
+     .imglogo,
+     .logo {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-left: 0;
+         margin-right: 0;
+         left: 0;
+     }
+
+     .imglogo img {
+         width: 150px;
+         height: auto;
+         margin: 0 auto;
+     }
+
+     .mensagen {
+         font-size: 20px;
+         text-align: center;
+         width: 100%;
+     }
+
+     .principal {
+         display: flex !important;
+         flex-direction: column !important;
+         /* Faz o texto ficar em cima da imagem */
+         align-items: center !important;
+         width: 100% !important;
+         margin: 0 0 !important;
+         gap: 20px !important;
+     }
+
+     .apresentacao {
+         display: contents !important;
+         margin-left: 0%;
+
+     }
+
+     .titulo {
+         order: 1;
+         /* O título vem primeiro */
+         width: 100%;
+         font-size: 40px;
+         font-style: italic;
+         color: hsl(132, 86%, 17%);
+         font-weight: bold;
+         text-align: center;
+         margin-top: 30px;
+     }
+
+     .subtitulo {
+         order: 1;
+         /* O subtítulo vem depois do título */
+         width: 100%;
+         font-size: 18px;
+         font-style: italic;
+         color: hsl(140, 4%, 15%);
+         text-align: center;
+     }
+
+     /* Ajuste para os ativos (as listas de benefícios) */
+     .ativos {
+         order: 1;
+         width: 100% !important;
+         padding: 10px !important;
+         text-align: center !important;
+     }
+
+     .ativos h2 {
+         font-size: 20px;
+         font-style: italic;
+         text-align: center;
+         width: 100%;
+         text-align: center;
+     }
+
+     .ativos p {
+         width: 100% !important;
+         max-width: 100%;
+         font-size: 18px !important;
+         /* Diminui para não quebrar no celular */
+         margin-bottom: 10px;
+         text-align: center;
+
+     }
+
+
+     .imagem {
+         order: 2;
+         display: flex !important;
+         justify-content: center !important;
+         width: 100% !important;
+         margin: 20px 0 !important;
+     }
+
+     /* Ajuste para a imagem do tônico que fica na lateral no desktop */
+
+     .imagem img {
+         width: 100% !important;
+         height: auto !important;
+         max-width: 300px;
+         /* Impede que a foto fique gigante */
+         margin: 0 auto !important;
+     }
+
+     /* Ajuste para o botão */
+     .btn-container {
+         display: flex;
+         align-items: center;
+         order: 3 !important;
+         /* O botão vem por último */
+         width: 90% !important;
+         /* Botão quase na largura toda */
+         margin: 20px auto !important;
+         font-size: 14px !important;
+     }
+
+     .btn {
+         width: 90% !important;
+         max-width: 350px;
+         margin: 10px auto !important;
+     }
+
+     .beneficios {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         background-color: rgb(254, 254, 254);
+         object-fit: cover;
+         width: 100%;
+         height: auto;
+         margin-top: 20px;
+         border-radius: 20px;
+     }
+
+     .icone_queda {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+     }
+
+     .icone_crescimento {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .icone_raiz {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .icone_folha {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 5px;
+     }
+
+     .icone_folha p {
+         margin-bottom: 10px;
+     }
+
+     .queda_capilar {
+         width: 300px;
+         height: auto;
+         object-fit: cover;
+         margin-top: 20px;
+
+     }
+
+     .crescimento_capilar {
+         width: 300px;
+         height: auto;
+         margin-top: 45px;
+         object-fit: cover;
+     }
+
+     .raiz_capilar {
+         width: 150px;
+         height: auto;
+         margin-top: 45px;
+         object-fit: cover;
+     }
+
+     .folha_capilar {
+         width: 200px;
+         margin-top: 45px;
+         height: 150px;
+     }
+
+     .beneficios p {
+         font-size: 15px;
+         font-style: italic;
+         font-weight: bold;
+
+     }
+
+     .texto {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .texto span {
+
+         font-style: italic;
+         color: hsl(132, 86%, 17%);
+         font-size: 30px;
+     }
+
+     .texto p {
+         font-size: 20px;
+         font-style: italic;
+         color: hsl(140, 4%, 15%);
+     }
+
+     .imagem_produto {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin: 50px auto;
+         width: 90%;
+         border-radius: 50px;
+         padding: 40px;
+         background-color: rgb(254, 254, 254);
+     }
+
+     .produto {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         border-radius: 15px;
+         gap: 100px;
+         padding: 40px;
+         /* transform: translateX(300px); */
+         gap: 100px;
+         /* transform: translateX(300px); */
+
+     }
+
+     .foto {
+         width: 100%;
+         max-width: 500px;
+         max-height: 500px;
+         object-fit: contain;
+     }
+
+     .preco {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+         gap: 15px;
+         width: auto;
+         /* transform: translateX(200px) translateY(-150px);  */
+     }
+        
+
+     .valor {
+        display: flex;
+        flex-direction: column ;
+        align-self: flex-start ;
+        font-style: italic;
+        font-size: 35px;
+        color: hsl(140, 4%, 15%);
+     }
+
+
+     .garantido {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: center;
+         gap: 20px;
+         /* margin: 50px 0 0 0; */
+     }
+
+     .carrinho_entrega {
+         transform: translateY(20px);
+     }
+
+     .carteira {
+         /* margin-top: 50px; */
+         margin-left: 20px;
+     }
+     .TextoCarrinho{
+        margin-bottom: 5px;
+     }
+     .TextoCarteira{
+        margin-bottom: 15px;
+     }
+
+ }
+/* 800px */
+ @media screen and (max-width: 800px) {
+
+     .mensagen {
+         display: none;
+     }
+
+     .texto span {
+         display: flex;
+         flex-wrap: wrap;
+         font-size: 30px;
+         width: 80%;
+         text-align: center;
+         margin: auto;
+     }
+
+     .texto p {
+         display: flex;
+         flex-wrap: wrap;
+
+     }
+       .valor{
+                font-style: italic;
+         font-size: 50px;
+         color: hsl(140, 4%, 15%);
+     }
+ }
+/* 900px */
+ @media screen and (max-width: 900px) {
+
+     .texto p {
+         width: 80%;
+         text-align: center;
+     }
+
+     .produto {
+         display: flex;
+         max-width: 100%;
+         flex-direction: column;
+         gap: 10%;
+         padding: 0%;
+         justify-content: space-around;
+         align-items: center;
+         word-wrap: break-word;
+         overflow-wrap: break-word;
+         word-break: break-word;
+     }
+
+     .conteudo_venda {
+         /* order: 1; */
+         display: contents !important;
+         width: 100%;
+     }
+
+     .texto_preco {
+         order: 1;
+         font-size: 50px;
+         width: 100%;
+         text-align: center;
+     }
+
+     .descricao {
+         order: 1;
+         text-align: center;
+         width: 100%;
+     }
+
+
+     .foto {
+         order: 2;
+         width: 100%;
+         max-width: 90%;
+         display: flex;
+         justify-content: center;
+     }
+
+     .comprar {
+         order: 3;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }
+
+      .valor{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-style: italic;
+        font-size: 50px;
+        color: hsl(140, 4%, 15%);
+     }
+        .garantido{
+            gap: 10px;
+        }
+
+ }
+
+ @media screen and (max-width: 700px) {
+     
+     .garantido {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         gap: 40px;
+         /* margin: 50px 0 0 0; */
+
+
+     }
+
+     .icone_seguro {
+         flex-wrap: wrap;
+         text-align: center;
+     }
+
+     .carrinho_entrega {
+         flex-wrap: wrap;
+         text-align: center;
+     }
+
+     .carteira {
+         flex-wrap: wrap;
+         text-align: center;
+         margin-left: 40px;
+     }
+      
+ }
+
+ @media screen and (max-width: 500px) {
+     .texto_preco h2 {
+         font-size: 80%;
+     }
+
+     .garantido {
+         display: flex;
+         flex-direction: column;
+         justify-self: center;
+         width: 50%;
+     }
+
+     .icone_seguro {
+         flex-wrap: wrap;
+         text-align: center;
+     }
+
+     .carrinho_entrega {
+         flex-wrap: wrap;
+         text-align: center;
+     }
+
+     .pagamento {
+         
+         flex-wrap: wrap;
+         text-align: center;
+     }
+        .carteira{
+            margin-left: 0px;
+        }
+ }
+
+ @media screen and (max-width: 400px) {
+     .texto_preco h2 {
+         font-size: 80%;
+     }
+      .valor{
+                font-style: italic;
+         font-size: 30px;
+         color: hsl(140, 4%, 15%);
+     }
+
+     
+
+     .Tonico {
+         text-align: center;
+         padding: 10px;
+     }
+ }

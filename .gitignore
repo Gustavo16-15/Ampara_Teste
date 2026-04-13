@@ -1,0 +1,7 @@
+# Ignora o arquivo env que está dentro da pasta back-end
+back-end/.env
+
+# Ignora as pastas de dependências (muito importante!)
+node_modules/
+back-end/node_modules/
+front_end/node_modules/
