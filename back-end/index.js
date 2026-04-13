@@ -18,14 +18,14 @@ app.use(express.json());
 
 // 3. SERVIR OS ARQUIVOS DO FRONT-END 
 // (Isso faz o Render entender que a pasta front_end deve ser mostrada no navegador)
-app.use(express.static(path.join(__dirname,  "front_end")));
+app.use(express.static(path.join(__dirname, "..","front_end")));
 
 const PORT = process.env.PORT || 3000;
 const { MERCADOPAGO_ACCESS_TOKEN } = process.env;
 
 // 4. ROTA PARA ABRIR O SITE (Página Inicial)
 app.post("/", (req, res) => {
-    res.sendFile(path.join(__dirname,  "front_end", "index.html"));
+    res.sendFile(path.join(__dirname, "..", "front_end", "index.html"));
 });
 
 // 5. SUA ROTA DO MERCADO PAGO
